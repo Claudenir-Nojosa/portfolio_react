@@ -2,13 +2,15 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 const EstiloGlobal = createGlobalStyle`
   * {
-    margin:0
-    padding: 0
+    margin:0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
+    list-style: none;
   }
 
   body {
-    padding-top: 80px
+    padding-top: 80px;
+    padding-bottom: 30px;
 
     @media (max-width: 768px) {
       padding-top: 16px;
@@ -33,5 +35,9 @@ export const Container = styled.div`
 
   img {
     max-width: 100%;
+  }
+
+  ul {
+    padding-left: 0;
   }
 `
